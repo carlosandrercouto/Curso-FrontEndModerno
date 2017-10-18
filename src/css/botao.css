@@ -29,3 +29,13 @@ div.menu button.btn_success {
   div.menu button.btn_success:hover {
     background-color: #006436;
     border-color: #2d682d; }
+
+.testeCor1 {
+  background-color: #3865e4; }
+  .testeCor1:hover {
+    background-color: #1d4dd6; }
+
+.testeCor2 {
+  background-color: #3bd123; }
+  .testeCor2:hover {
+    background-color: #2fa51c; }

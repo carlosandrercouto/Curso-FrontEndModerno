@@ -34,3 +34,25 @@ div.menu {
 		@include btnColorsMain(#008d4c, #398439, #fff);
 	}
 }
+
+//Functions
+@function escurecer($bgColor, $x:10%) {
+	@return darken($bgColor, $x);
+}
+
+.testeCor1 {
+	$bg1: #3865e4;
+	$x1: 8%;
+	background-color: $bg1;
+	&:hover {
+		background-color: escurecer($bg1, $x1);
+	}
+}
+
+.testeCor2 {
+	$bg2: #3bd123;
+	background-color: $bg2;
+	&:hover {
+		background-color: escurecer($bg2);
+	}
+}
