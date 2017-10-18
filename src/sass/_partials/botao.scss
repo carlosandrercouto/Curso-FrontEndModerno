@@ -1,0 +1,36 @@
+@mixin btnColorsMain($btn_bg, $btn_bor, $btn_color) {
+	background-color: $btn_bg;
+	border-color: $btn_bor;
+	color: $btn_color;
+	&:hover {
+		background-color:darken($btn_bg,8%);
+		border-color:darken($btn_bor,8%);
+	}
+}
+
+.btn_menu {
+	line-height: 1.25;
+	padding: .5rem .75rem;
+	border: 1px solid transparent;
+	border-radius: 0;
+	outline: none;
+	transition: all .15s ease-in-out;
+}
+
+div.menu {
+
+	button.btn_default {
+		@extend .btn_menu;
+		@include btnColorsMain(#e6e6e6, #adadad, #444);
+	}
+
+	button.btn_primary {
+		@extend .btn_menu;
+		@include btnColorsMain(#3c8dbc, #367fa9, #fff);
+	}
+
+	button.btn_success {
+		@extend .btn_menu;
+		@include btnColorsMain(#008d4c, #398439, #fff);
+	}
+}
