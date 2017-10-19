@@ -56,3 +56,11 @@ div.menu {
 		background-color: escurecer($bg2);
 	}
 }
+
+.testeCor5 {
+	$bg2: #3bd123;
+	background-color: $bg2;
+	&:hover {
+		background-color: escurecer($bg2);
+	}
+}

@@ -5,18 +5,20 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"preinstall": "mkdirp src/components/bootstrap/ src/components/font-awesome/",
-		"postinstall": "cp -r node_modules/bootstrap/dist src/components/bootstrap/ && cp -r node_modules/font-awesome/css src/components/font-awesome/ && cp -r node_modules/font-awesome/fonts src/components/font-awesome/",
-		"nodesass": "node-sass"
+		"preinstall": "mkdirp src/components/bootstrap/ src/components/font-awesome/ src/components/jQuery/",
+		"postinstall": "cp -r node_modules/bootstrap/dist/**/ src/components/bootstrap/ && cp -r node_modules/font-awesome/css src/components/font-awesome/ && cp -r node_modules/font-awesome/fonts src/components/font-awesome/ && cp node_modules/jquery/dist/jquery.min.js src/components/jquery",
+		"gulp": "gulp"
 	},
 	"author": "Carlos André Couto",
 	"license": "ISC",
 	"dependencies": {
 		"bootstrap": "^4.0.0-beta",
-		"font-awesome": "^4.7.0"
+		"font-awesome": "^4.7.0",
+		"jquery": "^3.2.1"
 	},
 	"devDependencies": {
-		"mkdirp": "^0.5.1",
-		"node-sass": "^4.5.3"
+		"gulp": "^3.9.1",
+		"gulp-sass": "^3.1.0",
+		"mkdirp": "^0.5.1"
 	}
 }
