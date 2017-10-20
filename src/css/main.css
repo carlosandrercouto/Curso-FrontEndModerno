@@ -1,49 +1,34 @@
+.header-animate {
+  height: 300px;
+  background-color: #64a59a; }
+
 .header-nav {
-  color: #fff; }
-
-.btn_menu, div.menu button.btn_default, div.menu button.btn_primary, div.menu button.btn_success {
-  line-height: 1.25;
-  padding: .5rem .75rem;
-  border: 1px solid transparent;
-  border-radius: 0;
-  outline: none;
-  transition: all .15s ease-in-out; }
-
-div.menu button.btn_default {
-  background-color: #e6e6e6;
-  border-color: #adadad;
-  color: #444; }
-  div.menu button.btn_default:hover {
-    background-color: #d2d2d2;
-    border-color: #999999; }
-
-div.menu button.btn_primary {
-  background-color: #3c8dbc;
-  border-color: #367fa9;
-  color: #fff; }
-  div.menu button.btn_primary:hover {
-    background-color: #32769d;
-    border-color: #2c688a; }
-
-div.menu button.btn_success {
-  background-color: #008d4c;
-  border-color: #398439;
-  color: #fff; }
-  div.menu button.btn_success:hover {
-    background-color: #006436;
-    border-color: #2d682d; }
-
-.testeCor1 {
-  background-color: #3865e4; }
-  .testeCor1:hover {
-    background-color: #1d4dd6; }
-
-.testeCor2 {
-  background-color: #3bd123; }
-  .testeCor2:hover {
-    background-color: #2fa51c; }
-
-.testeCor5 {
-  background-color: #3bd123; }
-  .testeCor5:hover {
-    background-color: #2fa51c; }
+  background-color: #84b8af;
+  padding: 0.3rem 1rem; }
+  .header-nav .header_nav__logo {
+    width: 70px;
+    position: relative;
+    top: 26px; }
+  .header-nav .navbar-toggler {
+    color: #d9d9d9;
+    outline: none;
+    transition: all 0.3s; }
+    .header-nav .navbar-toggler:hover {
+      color: #ffffff;
+      background-color: #64a59a; }
+    .header-nav .navbar-toggler[aria-expanded="true"] {
+      margin-bottom: 0px; }
+  .header-nav .show .navbar-nav .nav-item:nth-child(1), .header-nav .collapsing .navbar-nav .nav-item:nth-child(1) {
+    margin-top: 40px; }
+  .header-nav .show .navbar-nav .nav-link, .header-nav .collapsing .navbar-nav .nav-link {
+    font-size: 1.5em;
+    border-top: 2px solid #74aea5;
+    padding: 0.5rem 0.5rem;
+    color: #d9d9d9;
+    outline: none;
+    transition: all 0.3s; }
+    .header-nav .show .navbar-nav .nav-link:hover, .header-nav .collapsing .navbar-nav .nav-link:hover {
+      color: #ffffff;
+      background-color: #64a59a; }
+  .no-js .header-nav .header-nav--open {
+    display: block; }

@@ -1,4 +1,43 @@
-.header-nav {
-	color: #fff
+@mixin btnHeader($fontColor, $bgColor) {
+	color: darken($fontColor, 15%);
+	outline: none;
+	transition: all 0.3s;
+	&:hover {
+		color: $fontColor;
+		background-color: $bgColor;
+	}
+}
 
+.header-nav {
+	background-color: lighten($mainColor, 10%);
+	padding: 0.3rem 1rem;
+		.header_nav__logo {
+			width: 70px;
+			position: relative;
+			top: 26px;
+		}
+
+		.navbar-toggler {
+			@include btnHeader($navLinkColor, $mainColor);
+			&[aria-expanded="true"] {
+				margin-bottom: 0px;
+			}
+		}
+
+		.show .navbar-nav, .collapsing .navbar-nav {
+			.nav-item {
+				&:nth-child(1) {margin-top: 40px;}
+			}
+
+			.nav-link {
+				font-size: 1.5em;
+				border-top: 2px solid lighten($mainColor, 5%);
+				padding: 0.5rem 0.5rem;
+				@include btnHeader($navLinkColor, $mainColor);
+			}
+		}
+
+	.no-js & .header-nav--open {
+		display: block;
+	}
 }
