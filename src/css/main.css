@@ -1,37 +1,53 @@
-.header-animate {
-  height: 300px;
-  background-color: #64a59a; }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+h1, h2, h3, h4, h5, h6, *[class$='_subTitle'] {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif'; }
 
-.header-nav {
+.headerAnimate {
+  background-color: #64a59a; }
+  .headerAnimate_title {
+    font-size: 2.4rem;
+    font-weight: bold; }
+    @media (max-width: 576px) {
+      .headerAnimate_title {
+        font-size: 1.9rem; } }
+  .headerAnimate_subTitle {
+    font-size: 2.6rem;
+    color: #fff;
+    font-weight: lighter; }
+    @media (max-width: 576px) {
+      .headerAnimate_subTitle {
+        font-size: 2rem; } }
+
+.headerNav {
   background-color: #84b8af;
   padding: 0.3rem 1rem; }
-  .header-nav .header_nav__logo {
+  .headerNav_logo {
     width: 70px;
     position: relative;
     top: 26px; }
-  .header-nav .navbar-toggler {
+  .headerNav .navbar-toggler {
     color: #d9d9d9;
     outline: none;
     transition: all 0.3s; }
-    .header-nav .navbar-toggler:hover {
+    .headerNav .navbar-toggler:hover {
       color: #ffffff;
       background-color: #64a59a; }
-    .header-nav .navbar-toggler[aria-expanded="true"] {
+    .headerNav .navbar-toggler[aria-expanded="true"] {
       margin-bottom: 0px; }
   @media (max-width: 992px) {
-    .header-nav .navbar-nav .nav-item:nth-child(1) {
+    .headerNav .navbar-nav .nav-item:nth-child(1) {
       margin-top: 40px; } }
-  .header-nav .navbar-nav .nav-link {
+  .headerNav .navbar-nav .nav-link {
     font-size: 1.5em;
     padding: 0.5rem 0.5rem;
     color: #d9d9d9;
     outline: none;
     transition: all 0.3s; }
-    .header-nav .navbar-nav .nav-link:hover {
+    .headerNav .navbar-nav .nav-link:hover {
       color: #ffffff;
       background-color: #64a59a; }
     @media (max-width: 992px) {
-      .header-nav .navbar-nav .nav-link {
+      .headerNav .navbar-nav .nav-link {
         border-top: 2px solid #74aea5; } }
-  .no-js .header-nav .header-nav--open {
+  .no-js .headerNav_open {
     display: block; }

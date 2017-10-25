@@ -8,10 +8,10 @@
 	}
 }
 
-.header-nav {
+.headerNav {
 	background-color: lighten($mainColor, 10%);
 	padding: 0.3rem 1rem;
-		.header_nav__logo {
+		&_logo {
 			width: 70px;
 			position: relative;
 			top: 26px;
@@ -44,7 +44,7 @@
 			}
 		}
 
-	.no-js & .header-nav--open {
+	.no-js &_open {
 		display: block;
 	}
 }
