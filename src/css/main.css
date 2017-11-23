@@ -2,29 +2,6 @@
 body {
   font-family: 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif'; }
 
-.headerAnimate {
-  background-color: #64a59a;
-  padding-bottom: 0; }
-  .headerAnimate_title {
-    font-size: 2.4rem;
-    font-weight: bold; }
-    @media (max-width: 576px) {
-      .headerAnimate_title {
-        font-size: 1.9rem; } }
-  .headerAnimate_subTitle {
-    font-size: 2.6rem;
-    color: #fff;
-    font-weight: lighter;
-    line-height: 1.3; }
-    @media (max-width: 576px) {
-      .headerAnimate_subTitle {
-        font-size: 2rem; } }
-  .headerAnimate_img {
-    height: 150px;
-    background-image: url(../images/cenario_all_960.png);
-    background-size: auto 100%;
-    background-position: 50% top; }
-
 .headerNav {
   background-color: #84b8af;
   padding: 0.3rem 1rem; }
@@ -58,3 +35,45 @@ body {
         border-top: 2px solid #74aea5; } }
   .no-js .headerNav_open {
     display: block; }
+
+.headerAnimate {
+  background-color: #64a59a;
+  padding-bottom: 0; }
+  .headerAnimate_title {
+    font-size: 2.4rem;
+    font-weight: bold; }
+    @media (max-width: 576px) {
+      .headerAnimate_title {
+        font-size: 1.9rem; } }
+  .headerAnimate_subTitle {
+    font-size: 2.6rem;
+    color: #fff;
+    font-weight: lighter;
+    line-height: 1.3; }
+    @media (max-width: 576px) {
+      .headerAnimate_subTitle {
+        font-size: 2rem; } }
+  .headerAnimate_img {
+    height: 150px;
+    background-image: url(../images/cenario_all_960.png);
+    background-size: auto 100%;
+    background-position: center top; }
+    .headerAnimate_img > div {
+      display: none; }
+    @media screen and (min-width: 480px) {
+      .headerAnimate_img {
+        background-image: url(../images/cenario_all_1530.png); } }
+    @media screen and (min-width: 960px) {
+      .headerAnimate_img {
+        height: 300px;
+        background-image: url(../images/cenario_bg.png);
+        position: relative; }
+        .headerAnimate_img > div {
+          display: block;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0; }
+        .headerAnimate_img .headerAnimete_img-nuvens {
+          background-image: url(../images/cenario_nuvens.png); } }

@@ -30,6 +30,33 @@
 		height: $imgH/2;
 		background-image: url(../images/cenario_all_960.png);
 		background-size: auto 100%;
-		background-position: 50% top;
+		background-position: center top;
+
+		& > div {
+			display: none;
+		}
+
+		@media screen and(min-width: 480px) {
+			background-image: url(../images/cenario_all_1530.png);
+		}
+
+		@media screen and(min-width: 960px) {
+			height: $imgH;
+			background-image: url(../images/cenario_bg.png);
+			position: relative;
+
+			& > div {
+				display: block;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+			}
+
+			.headerAnimete_img-nuvens {
+				background-image: url(../images/cenario_nuvens.png);
+			}
+		}
 	}
 }
