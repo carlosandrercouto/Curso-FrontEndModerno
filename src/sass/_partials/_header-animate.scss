@@ -1,5 +1,6 @@
 .headerAnimate {
 	background-color: $mainColor;
+	padding-bottom: 0;
 
 	&_title {
 		font-size: 2.4rem;
@@ -23,5 +24,12 @@
 				font-size: 2rem;
 			}
 		}
+	}
+
+	&_img {
+		height: $imgH/2;
+		background-image: url(../images/cenario_all_960.png);
+		background-size: auto 100%;
+		background-position: 50% top;
 	}
 }
