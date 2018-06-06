@@ -1,0 +1,10 @@
+//===== Mixins Globais =====//
+@mixin btnHeader($fontColor, $bgColor) {
+	color: darken($fontColor, 15%);
+	outline: none;
+	transition: all 0.3s;
+	&:hover {
+		color: $fontColor;
+		background-color: $bgColor;
+	}
+}

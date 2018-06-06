@@ -1,21 +1,11 @@
-@mixin btnHeader($fontColor, $bgColor) {
-	color: darken($fontColor, 15%);
-	outline: none;
-	transition: all 0.3s;
-	&:hover {
-		color: $fontColor;
-		background-color: $bgColor;
-	}
-}
-
-.headerNav {
+.header-nav {
 	background-color: lighten($mainColor, 10%);
 	padding: 0.3rem 1rem;
-		&_logo {
-			width: 70px;
-			position: relative;
-			top: 26px;
-		}
+	&__logo {
+		width: 70px;
+		position: relative;
+		top: 26px;
+	}
 
 		.navbar-toggler {
 			@include btnHeader($navLinkColor, $mainColor);
@@ -47,4 +37,4 @@
 	.no-js &_open {
 		display: block;
 	}
-} 
+}
